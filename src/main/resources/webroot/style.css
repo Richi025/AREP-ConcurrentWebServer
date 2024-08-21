@@ -1,63 +1,62 @@
-/* Estilos generales */
+/* General Styles */
 body {
     font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
+    background-color: #f0f8ff; /* Light blue background */
     color: #333;
-}
-
-/* Estilos del encabezado */
-header {
-    background-color: #4CAF50;
-    color: white;
-    padding: 20px 0;
-    text-align: center;
-}
-
-header h1 {
     margin: 0;
-}
-
-nav ul {
-    list-style-type: none;
     padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
-nav ul li {
-    display: inline;
-    margin-right: 15px;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-}
-
-nav ul li a:hover {
-    text-decoration: underline;
-}
-
-/* Estilos del contenido principal */
-main {
+/* Container */
+.container {
+    text-align: center;
+    background-color: #fff;
     padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
 }
 
-main section {
+/* Form Styling */
+.form-style {
     margin-bottom: 20px;
 }
 
-main h2 {
-    color: #4CAF50;
+/* Input Fields */
+input[type="text"] {
+    padding: 10px;
+    width: 80%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-size: 16px;
 }
 
-/* Estilos del pie de página */
-footer {
-    background-color: #333;
+/* Buttons */
+.btn {
+    padding: 10px 20px;
+    background-color: #1e90ff; /* Dodger Blue */
     color: white;
-    text-align: center;
-    padding: 10px 0;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #1c86ee; /* Slightly darker blue */
+}
+
+/* Response Box */
+.response-box {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #e6f7ff; /* Very light blue */
+    border: 1px solid #b3e0ff; /* Light blue border */
+    border-radius: 5px;
+    color: #333;
 }
