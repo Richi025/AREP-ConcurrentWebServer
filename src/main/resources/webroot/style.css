@@ -60,3 +60,10 @@ input[type="text"] {
     border-radius: 5px;
     color: #333;
 }
+
+.img-responsive {
+    width: 100%;
+    max-width: 400px;
+    display: block;
+    margin: 0 auto 20px auto;
+}

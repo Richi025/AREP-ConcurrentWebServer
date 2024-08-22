@@ -7,11 +7,13 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    
     <div class="container">
+        <img src="images.png" alt="Imagen descriptiva" class="img-responsive">
         <h1>GET Request</h1>
         <form action="/hello" class="form-style">
             <label for="name">Name:</label><br>
-            <input type="text" id="name" name="name" value="John"><br><br>
+            <input type="text" id="name" name="name" value="Write your name"><br><br>
             <input type="button" value="Submit" onclick="loadGetMsg()" class="btn">
         </form> 
         <div id="getrespmsg" class="response-box"></div>
@@ -19,7 +21,7 @@
         <h1>POST Request</h1>
         <form action="/hellopost" class="form-style">
             <label for="postname">Name:</label><br>
-            <input type="text" id="postname" name="name" value="John"><br><br>
+            <input type="text" id="postname" name="name" value="Write your name"><br><br>
             <input type="button" value="Submit" onclick="loadPostMsg(postname)" class="btn">
         </form>
         <div id="postrespmsg" class="response-box"></div>
@@ -37,7 +39,8 @@
         }
 
         function loadPostMsg(name) {
-            let url = "/app/hellopost?name=" + name.value;
+            let nameVar = document.getElementById("postname").value;
+            let url = "/app/hellopost?name=" + nameVar;
 
             fetch(url, { method: 'POST' })
                 .then(x => x.text())
